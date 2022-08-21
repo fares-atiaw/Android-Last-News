@@ -25,8 +25,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:clipToPadding="true"
             tools:listitem="@layout/devbyte_item" />
     </FrameLayout>
 </layout>

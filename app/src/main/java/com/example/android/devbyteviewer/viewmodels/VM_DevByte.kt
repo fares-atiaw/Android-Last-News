@@ -25,6 +25,23 @@ class VM_DevByte(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    /*
+    private var _playlist = MutableLiveData<List<Video>>(emptyList())
+    val playlist: LiveData<List<Video>>
+    get() = _playlist
+
+    init {
+        viewModelScope.launch(Dispatchers.IO) {
+            try {
+                _playlist.postValue(videosRepository.videos.value)
+                videosRepository.refreshVideos()
+            }catch (e : Exception) {
+                Timber.w("Something wrong happens")
+            }
+
+        }
+    }
+     */
 
 
     class Factory(val app: Application) : ViewModelProvider.Factory {
